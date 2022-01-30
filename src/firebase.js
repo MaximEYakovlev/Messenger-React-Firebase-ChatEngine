@@ -3,11 +3,11 @@ import "firebase/compat/auth";
 
 export const auth = firebase
   .initializeApp({
-    apiKey: "AIzaSyCUeC2x4XPJoP1wRSv9HQuzTdIKtBgYz08",
-    authDomain: "unichat-a7c57.firebaseapp.com",
-    projectId: "unichat-a7c57",
-    storageBucket: "unichat-a7c57.appspot.com",
-    messagingSenderId: "833962996418",
-    appId: "1:833962996418:web:6fbb81831c06d8690f015b",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
   })
   .auth();
